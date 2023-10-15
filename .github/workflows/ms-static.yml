@@ -55,6 +55,7 @@ jobs:
         path: |
           ${{ env.README }}
           ${{ github.workspace }}/${{ matrix.arch }}/build/${{ matrix.config }}/LLGL*.dll
+          ${{ github.workspace }}/${{ matrix.arch }}/build/${{ matrix.config }}/LLGL*.lib
           ${{ github.workspace }}/${{ matrix.arch }}/build/${{ matrix.config }}/Example_*.exe
           ${{ github.workspace }}/${{ matrix.arch }}/build/${{ matrix.config }}/Testbed*.exe
       
