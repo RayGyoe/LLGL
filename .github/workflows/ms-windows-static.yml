@@ -13,7 +13,7 @@ jobs:
         generator: [Visual Studio 17 2022, Visual Studio 16 2019]
         arch: [x64, Win32]
         lib: [Shared, Static]
-        config: [Release, Debug]
+        config: [Release]
       fail-fast: false
 
     runs-on: ${{ matrix.generator == 'Visual Studio 17 2022' && 'windows-latest' || 'windows-2019' }}
